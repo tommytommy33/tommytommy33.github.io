@@ -59,6 +59,8 @@ button {
 .no-button {
   background-color: #dc3545;
   color: white;
+  position: absolute;
+  transition: left 0.2s, top 0.2s;
 }
 
 /* No button hover effect */
