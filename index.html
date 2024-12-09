@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Small GIF above the "Will you be my Valentine?" section -->
@@ -20,7 +20,6 @@
     </div>
 
     <script>
-        // Function to make the "No" button move randomly when hovered
         function moveNoButton() {
             const noButton = document.querySelector('.no-button');
             const container = document.querySelector('.buttons-container');
@@ -29,6 +28,7 @@
             const buttonWidth = noButton.offsetWidth;
             const buttonHeight = noButton.offsetHeight;
 
+            // Generate random new positions within the container
             const randomX = Math.random() * (containerWidth - buttonWidth);
             const randomY = Math.random() * (containerHeight - buttonHeight);
 
